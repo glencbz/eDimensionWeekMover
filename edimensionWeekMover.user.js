@@ -15,6 +15,6 @@ var $ = window.jQuery;
 var $current = $(".current");
 
 //Change the background color to whatever you like
-$current.css("background-color", "#9CBAF1");
+$current.css("background-color", "rgb(215, 229, 255)");
 var copy = $current.clone();
 $("ul.weeks").prepend(copy);
