@@ -20,5 +20,5 @@ var copy = $current.clone();
 copy.css("border", "2px solid #2FB1FF");
 copy.css("border-radius", "4px");
 copy.children(".content").prepend("<h2 class='this-week-title'>This Week</h2>");
-$("h2.this-week-title").css("font-family", 'Helvetica Neue",Helvetica,Arial,sans-serif');
 $("ul.weeks").prepend(copy);
+$("h2.this-week-title").css("font-family", 'Helvetica Neue",Helvetica,Arial,sans-serif');
