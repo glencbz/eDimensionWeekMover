@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         eDimension Week Fixer
-// @namespace    https://github.com/glencbz/edimensionWeekFixer
-// @version      0.1
+// @name         eDimension Week Mover
+// @namespace    https://github.com/glencbz/edimensionWeekMover
+// @version      0.6
 // @description  Moves the current course to the top of the
 // @author       Glen Choo
 // @match        http://edimension.sutd.edu.sg/course/view.php?id=*
