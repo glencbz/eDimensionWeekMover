@@ -2,7 +2,7 @@
 
 Also changes the color of the background to a more noticeable shade of blue. Feel free to change the color attribute to whatever you want.
 
-(Secret feature, it also turns the boxes into links)
+(Secret feature, you can click the boxes of the current week to jump between them)
 
 ###Requires
 

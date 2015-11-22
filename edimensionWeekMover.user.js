@@ -20,5 +20,20 @@ var copy = $current.clone();
 copy.css("border", "2px solid #2FB1FF");
 copy.css("border-radius", "4px");
 copy.children(".content").prepend("<h2 class='this-week-title'>This Week</h2>");
+copy.attr("id", "current-section");
+copy.removeClass("current");
+
 $("ul.weeks").prepend(copy);
 $("h2.this-week-title").css("font-family", 'Helvetica Neue",Helvetica,Arial,sans-serif');
+$(".current").click(function(){
+	console.log($("#current-section").offset().top);
+	$("body").animate({
+		scrollTop: $("#current-section").offset().top
+	},200);
+});
+$("#current-section").click(function(){
+	console.log($(".current").offset().top);
+	$("body").animate({
+		scrollTop: $(".current").offset().top
+	},200);
+});
