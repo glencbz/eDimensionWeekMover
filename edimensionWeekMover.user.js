@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         eDimension Week Mover
 // @namespace    https://github.com/glencbz/edimensionWeekMover
-// @version      0.7
+// @version      0.72
 // @description  Moves the current course to the top of the
 // @author       Glen Choo
 // @match        http://edimension.sutd.edu.sg/course/view.php?id=*
@@ -31,9 +31,14 @@ $(".current").click(function(){
 		scrollTop: $("#current-section").offset().top
 	},200);
 });
+
 $("#current-section").click(function(){
 	console.log($(".current").offset().top);
 	$("body").animate({
 		scrollTop: $(".current").offset().top
 	},200);
+});
+
+$(".current a, #current-section a").click(function(event){
+	event.stopPropagation();
 });
