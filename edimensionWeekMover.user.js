@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         eDimension Week Mover
 // @namespace    https://github.com/glencbz/edimensionWeekMover
-// @version      0.75
+// @version      0.76
 // @description  Moves the current course to the top of the page
 // @author       Glen Choo
 // @match        http://edimension.sutd.edu.sg/course/view.php?id=*
@@ -18,7 +18,7 @@ var $current = $(".current");
 var currentBackgroundColor = "#D7F0FF";
 
 var styles = ["<style>h2.week-title{color: black; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;}</style>"];
-styles.push("<style>.current{background-color:" + currentBackgroundColor + " ;}</style>")
+styles.push("<style>.current, #current-section{background-color:" + currentBackgroundColor + " !important;}</style>")
 styles.push("<style>h3.sectionname{color: #505050;}</style>")
 
 $("body").append(styles);
