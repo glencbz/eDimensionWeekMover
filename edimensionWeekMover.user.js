@@ -12,6 +12,7 @@
 'use strict';
 
 var $ = window.jQuery;
+$(function(){
 var $current = $(".current");
 
 //Change the background color to whatever you like
@@ -61,3 +62,4 @@ $("#current-section").click(function(){
 $(".current a, #current-section a").click(function(event){
 	event.stopPropagation();
 });
+})
