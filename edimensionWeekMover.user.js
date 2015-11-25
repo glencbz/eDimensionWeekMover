@@ -62,4 +62,4 @@ $("#current-section").click(function(){
 $(".current a, #current-section a").click(function(event){
 	event.stopPropagation();
 });
-})
+});
